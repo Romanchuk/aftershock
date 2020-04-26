@@ -1,0 +1,323 @@
+:root {
+    --aft-base__color: #ddd;
+    --aft-base__background-color: #333;
+    --aft-base__h1__color: #eee;
+    --aft-base__h2__color: #aaa;
+    --aft-input__background-color: #3d3d3d;
+    --aft-button__color: #ccc;
+    --aft-menu__active__color: #da5b5b;
+    --aft-menu__active__background-color: #3d3d3d;
+    --aft-a__color: #ff8383;
+    --aft-a--hover__color: #da5b5b;
+    --aft-comment-header__color: #999;
+}
+
+body {
+    color: var(--aft-base__color);
+}
+
+#aft-main {
+    background: var(--aft-base__background-color);
+}
+
+.aft-page h1,
+.aft-article h1,
+.aft-postcontent h2 {
+    color: var(--aft-base__color);
+}
+
+.aft-button,
+a.aft-button,
+a.aft-button:link,
+a:link.aft-button:link,
+body a.aft-button:link,
+a.aft-button:visited,
+body a.aft-button:visited,
+input.aft-button,
+button.aft-button,
+.aft-button.hover,
+.aft-button:hover {
+    background: var(--aft-input__background-color) !important;
+    color: var(--aft-button__color);
+}
+
+.aft-button.hover,
+.aft-button:hover,
+.aft-button.active,
+.aft-button:active,
+.aft-button.active:hover {
+    color: var(--aft-a--hover__color) !important;
+}
+
+
+/* input */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+textarea {
+    color: var(--aft-base__color) !important;
+    background: var(--aft-input__background-color);
+}
+
+
+/* pager */
+
+.aft-pager>*,
+.aft-pager .more {
+    background: var(--aft-input__background-color);
+}
+
+.aft-pager a:link,
+.aft-pager a:visited {
+    color: var(--aft-button__color);
+}
+
+.aft-pager .active,
+.aft-pager a:hover {
+    background: var(--aft-input__background-color);
+    color: var(--aft-a--hover__color);
+}
+
+.aft-postheader,
+.aft-postheader h1 {
+    color: var(--aft-base__h1__color);
+}
+
+.aft-postheader a,
+.aft-postheader a:link {
+    color: var(--aft-base__h1__color);
+}
+
+.aft-postheader a:visited,
+.aft-postheader a.visited {
+    color: var(--aft-base__color);
+}
+
+.aft-postheader a:hover,
+.aft-postheader a.hovered {
+    color: var(--aft-a--hover__color);
+}
+
+
+/* post */
+
+.field-type-text-with-summary a:visited,
+.field-type-text-long a:visited {
+    color: var(--aft-a__color) !important;
+}
+
+.field-type-text-with-summary a:link,
+.field-type-text-long a:link {
+    color: var(--aft-a--hover__color) !important;
+}
+
+blockquote {
+    background-color: var(--aft-input__background-color);
+    color: var(--aft-button__color);
+}
+
+.field-label {
+    color: var(--aft-base__color);
+}
+
+.opengraph-filter {
+    background-color: var(--aft-input__background-color);
+    color: var(--aft-button__color);
+}
+
+
+/* menus */
+
+.aft-postcontent a:visited,
+.aft-postcontent a.visited,
+blockquote a:visited,
+.aft-postcontent blockquote a:visited,
+.aft-blockcontent blockquote a:visited,
+.aft-footer blockquote a:visited {
+    color: var(--aft-a__color);
+    text-decoration-color: var(--aft-a__color);
+}
+
+.aft-postcontent a,
+.aft-postcontent a:link {
+    color: var(--aft-a__color);
+}
+
+.aft-postcontent a:hover {
+    color: var(--aft-a--hover__color);
+}
+
+
+/* post preview top */
+
+.aft-postcounter {
+    color: var(--aft-button__color);
+}
+
+.aft-postheadericons a:hover,
+.aft-postheadericons a.hover,
+.aft-postheadericons a:visited,
+.aft-postheadericons a.visited {
+    color: var(--aft-a--hover__color);
+    font-style: normal;
+}
+
+
+/* post preview bottom */
+
+.publication-tags-item a:link,
+.publication-tags-item a:visited {
+    color: var(--aft-a__color) !important;
+}
+
+.publication-tags-item a:hover,
+.publication-tags-item a:focus,
+.publication-tags-category-item a:hover,
+.publication-tags-category-item a:focus {
+    color: var(--aft-a--hover__color) !important;
+}
+
+.publication-tags-category-item a:link,
+.publication-tags-category-item a:visited {
+    color: var(--aft-a__color);
+}
+
+
+/* comments */
+
+.aft-comments h2 {
+    color: var(--aft-base__h2__color);
+}
+
+.aft-comment-content {
+    color: inherit;
+}
+
+.aft-comment-header,
+.aft-comment-header a {
+    color: var(--aft-comment-header__color) !important;
+}
+
+.aft-comment-header a:hover,
+.aft-comment-header a:visited,
+.aft-comment-header a:active {
+    color: var(--aft-a--hover__color) !important;
+}
+
+.aft-postcontent li,
+.aft-post li,
+.aft-textblock li {
+    color: var(--aft-comment-header__color);
+}
+
+.comment_forbidden span a,
+.comment_forbidden span a:visited {
+    color: var(--aft-a__color) !important
+}
+
+.comment_forbidden span a:hover {
+    color: var(--aft-a--hover__color) !important;
+}
+
+label.aft-checkbox,
+label.aft-radiobutton,
+.aft-commentsform input:not([type="submit"]),
+.aft-commentsform textarea,
+.aft-commentsform {
+    color: var(--aft-comment-header__color) !important;
+}
+
+
+/* ava */
+
+.node .user-picture img,
+.aft-comment-avatar img {
+    border-color: transparent;
+}
+
+.aft-comment-avatar img:hover,
+.node .user-picture img:hover {
+    border-color: var(--aft-button__color);
+}
+
+
+/* menu */
+
+.aft-blockheader .t,
+.aft-blockheader .t a,
+.aft-blockheader .t a:link,
+.aft-blockheader .t a:visited,
+.aft-blockheader .t a:hover {
+    color: var(--aft-base__color);
+}
+
+.aft-blockcontent {
+    color: inherit;
+}
+
+.aft-blockcontent table,
+.aft-blockcontent li,
+.aft-blockcontent a,
+.aft-blockcontent a:link,
+.aft-blockcontent a:visited,
+.aft-blockcontent a:hover {
+    color: var(--aft-base__h2__color);
+}
+
+.aft-blockcontent a:hover,
+.aft-blockcontent a.hover {
+    color: var(--aft-a--hover__color) !important;
+}
+
+
+/* about category */
+
+.field-name-field-printing-description {
+    background: #494943;
+    color: #fff;
+}
+
+
+/* header*/
+
+.aft-shapes {
+    background: none;
+}
+
+.aft-header {
+    background-color: var(--aft-input__background-color);
+}
+
+.aft-header:after {
+    color: var(--aft-base__h1__color);
+}
+
+
+/* author comment */
+
+.field-name-field-author-comment {
+    background-color: #6a6d59;
+}
+
+.field-name-field-author-comment {
+    border-color: var(--aft-input__background-color);
+}
+
+
+/* spoiler */
+
+
+/* spoiler */
+
+div.spoiler div.spoiler-title {
+    color: inherit;
+    background: var(--aft-input__background-color);
+    border: none;
+    box-shadow: none;
+}
+
+div.spoiler div.spoiler-content {
+    background: var(--aft-input__background-color);
+}

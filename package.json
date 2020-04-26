@@ -1,0 +1,22 @@
+{
+    "name": "aftershock-user-css",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx ws"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Romanchuk/aftershock.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Romanchuk/aftershock/issues"
+    },
+    "homepage": "https://github.com/Romanchuk/aftershock#readme",
+    "devDependencies": {
+        "local-web-server": "^4.0.0"
+    }
+}
