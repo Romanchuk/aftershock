@@ -8,6 +8,9 @@
     --aft-base__border-radius: 4px;
     --aft-menu__active__color: #da5b5b;
     --aft-menu__active__background-color: #eee;
+    --aft-comment__intended__border-color: #ccc;
+    --aft-comment__intended--highlighted__border-color: #999;
+    --aft-comment--highlighted__background-color: #eee;
 }
 
 .aft-header {
@@ -250,4 +253,34 @@ ul.menu li a.active {
 
 .region-sidebar-right .aft-blockcontent .aft-postcommentsicon>a {
     font-size: 11px;
+}
+
+
+/* comments */
+
+.indented,
+.indented0,
+.indented1,
+.indented2,
+.indented3 {
+    border-color: var(--aft-comment__intended__border-color);
+}
+
+.aft-comment:hover+[class^=indented] {
+    border-color: var(--aft-comment__intended--highlighted__border-color);
+}
+
+.aft-comment:hover+[class^=indented]>.aft-comment {
+    background-color: var(--aft-comment--highlighted__background-color);
+}
+
+
+/* Переход по якорю к постоянной ссылке  */
+
+a:target+.aft-comment {
+    background-color: var(--aft-comment--highlighted__background-color);
+}
+
+a:target+.aft-comment+[class^=indented] {
+    border-color: var(--aft-comment__intended--highlighted__border-color);
 }

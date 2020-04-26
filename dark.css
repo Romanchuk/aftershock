@@ -10,6 +10,9 @@
     --aft-a__color: #ff8383;
     --aft-a--hover__color: #da5b5b;
     --aft-comment-header__color: #999;
+    --aft-comment__intended__border-color: #666;
+    --aft-comment__intended--highlighted__border-color: #999;
+    --aft-comment--highlighted__background-color: #2d2d2d;
 }
 
 body {
