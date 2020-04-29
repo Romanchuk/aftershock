@@ -326,3 +326,19 @@ div.spoiler div.spoiler-title {
 div.spoiler div.spoiler-content {
     background: var(--aft-input__background-color);
 }
+
+.aft-comment:hover+[class^=indented]>.aft-comment .aft-comment-header,
+.aft-comment:hover+a#new+[class^=indented]>.aft-comment .aft-comment-header
+/* new */
+
+{
+    background-color: var(--aft-comment--highlighted__background-color);
+}
+
+
+/* status message */
+
+div.status {
+    background: var(--aft-recommend__background);
+    color: #be7;
+}
