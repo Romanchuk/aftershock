@@ -54,6 +54,15 @@
     text-rendering: optimizelegibility;
     white-space: normal;
     hyphens: none;
+    margin: 12px 0;
+}
+
+.aft-postcontent p:only-child {
+    margin: 8px 0;
+}
+
+.aft-postcontent p:first-child {
+    margin-top: 8px;
 }
 
 #aft-main,
