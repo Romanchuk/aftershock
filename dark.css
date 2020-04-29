@@ -347,6 +347,7 @@ div.status {
 
 /* post preview */
 
+.node-unpublished,
 .preview .node {
     background-color: transparent;
 }
