@@ -266,12 +266,21 @@ ul.menu li a.active {
     border-color: var(--aft-comment__intended__border-color);
 }
 
+.aft-comment-header {
+    margin-left: 86px;
+    border-radius: 2px;
+}
+
 .aft-comment:hover+[class^=indented] {
     border-color: var(--aft-comment__intended--highlighted__border-color);
 }
 
-.aft-comment:hover+[class^=indented]>.aft-comment {
-    background-color: var(--aft-comment--highlighted__background-color);
+.aft-comment:hover+[class^=indented]>.aft-comment .aft-comment-header,
+.aft-comment:hover+a#new+[class^=indented]>.aft-comment .aft-comment-header
+/* new */
+
+{
+    background-color: var(--aft-comment__intended__border-color);
 }
 
 
