@@ -26,7 +26,8 @@ body {
 
 .aft-page h1,
 .aft-article h1,
-.aft-postcontent h2 {
+.aft-postcontent h2,
+.aft-postcontent h3 {
     color: var(--aft-base__color);
 }
 
@@ -341,4 +342,11 @@ div.spoiler div.spoiler-content {
 div.status {
     background: var(--aft-recommend__background);
     color: #be7;
+}
+
+
+/* post preview */
+
+.preview .node {
+    background-color: var(--aft-menu__active__background-color);
 }
