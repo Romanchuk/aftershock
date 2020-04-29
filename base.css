@@ -306,7 +306,8 @@ a:target+.aft-comment+[class^=indented] {
 
 /* status message */
 
-div.status {
+div.status,
+div.error {
     border: none;
     border-radius: 4px;
 }
