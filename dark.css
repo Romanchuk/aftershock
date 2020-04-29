@@ -348,5 +348,5 @@ div.status {
 /* post preview */
 
 .preview .node {
-    background-color: var(--aft-menu__active__background-color);
+    background-color: transparent;
 }
