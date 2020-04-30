@@ -255,13 +255,13 @@ ul.menu li a.active {
     color: #8f8787;
 }
 
-.region-sidebar-right .aft-postcommentsicon {
-    display: block;
-    text-align: right;
+.region-sidebar-right .aft-postfootericons.aft-metadata-icons,
+.region-sidebar-right .aft-blockcontent .aft-postfootericons.aft-metadata-icons a {
+    font-size: 11px;
 }
 
-.region-sidebar-right .aft-blockcontent .aft-postcommentsicon>a {
-    font-size: 11px;
+.region-sidebar-right .aft-postfootericons {
+    text-align: right;
 }
 
 
@@ -310,4 +310,11 @@ div.status,
 div.error {
     border: none;
     border-radius: 4px;
+}
+
+
+/* author, editor comment */
+
+.field-name-field-author-comment .field-item {
+    margin: 0 10px;
 }
