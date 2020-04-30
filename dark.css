@@ -13,7 +13,8 @@
     --aft-comment__intended__border-color: #666;
     --aft-comment__intended--highlighted__border-color: #999;
     --aft-comment--highlighted__background-color: #2d2d2d;
-    --aft-recommend__background: #4e5041;
+    --aft-recommend__background: #4e4e4a;
+    --aft-recommend__color: #fff;
 }
 
 body {
@@ -280,8 +281,8 @@ label.aft-radiobutton,
 /* about category */
 
 .field-name-field-printing-description {
-    background: #494943;
-    color: #fff;
+    background: var(--aft-recommend__background);
+    color: var(--aft-recommend__color);
 }
 
 
@@ -300,13 +301,13 @@ label.aft-radiobutton,
 }
 
 
-/* author comment */
+/* author, editor comment */
 
+.editor-comments,
+.editor-comments .ctools-collapsible-container,
 .field-name-field-author-comment {
     background-color: var(--aft-recommend__background);
-}
-
-.field-name-field-author-comment {
+    color: var(--aft-recommend__color);
     border-color: var(--aft-input__background-color);
 }
 
@@ -351,3 +352,12 @@ div.status {
 .preview .node {
     background-color: transparent;
 }
+
+
+/* личный блог */
+
+.aft-postfootericons a:visited,
+.aft-postfootericons a.visited {}
+
+background: var(--aft-recommend__background);
+color: var(--aft-recommend__color);
