@@ -215,7 +215,7 @@ blockquote a:visited,
 .aft-postcontent li,
 .aft-post li,
 .aft-textblock li {
-    color: var(--aft-comment-header__color);
+    color: #ccc;
 }
 
 .comment_forbidden span a,
