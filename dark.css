@@ -317,7 +317,6 @@ label.aft-radiobutton,
 
 
 /* spoiler */
-
 div.spoiler div.spoiler-title {
     color: inherit;
     background: var(--aft-input__background-color);
@@ -331,8 +330,6 @@ div.spoiler div.spoiler-content {
 
 .aft-comment:hover+[class^=indented]>.aft-comment .aft-comment-header,
 .aft-comment:hover+a#new+[class^=indented]>.aft-comment .aft-comment-header
-/* new */
-
 {
     background-color: var(--aft-comment--highlighted__background-color);
 }
@@ -359,5 +356,14 @@ div.status {
 .aft-postfootericons a:visited,
 .aft-postfootericons a.visited {}
 
-background: var(--aft-recommend__background);
-color: var(--aft-recommend__color);
+
+.ctools-collapsible-container {
+    /* Скрытый комментарий бота */
+    background: var(--aft-recommend__background);
+}
+
+.ctools-collapsible-container .ctools-collapsible-handle {
+    color: var(--aft-comment-header__color);
+}
+  
+
