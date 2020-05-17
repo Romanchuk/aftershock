@@ -61,8 +61,7 @@ button.aft-button,
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input[type="url"],
-textarea {
+input[type="url"] {
     color: var(--aft-base__color) !important;
     background: var(--aft-input__background-color);
 }
@@ -235,7 +234,6 @@ blockquote a:visited,
 label.aft-checkbox,
 label.aft-radiobutton,
 .aft-commentsform input:not([type="submit"]),
-.aft-commentsform textarea,
 .aft-commentsform {
     color: var(--aft-comment-header__color) !important;
 }
