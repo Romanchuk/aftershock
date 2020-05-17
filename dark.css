@@ -13,7 +13,7 @@
     --aft-comment__intended__border-color: #666;
     --aft-comment__intended--highlighted__border-color: #999;
     --aft-comment--highlighted__background-color: #2d2d2d;
-    --aft-recommend__background: #4e4e4a;
+    --aft-recommend__background: #2d2d2d;
     --aft-recommend__color: #fff;
 }
 
@@ -89,6 +89,7 @@ textarea {
 .aft-postheader,
 .aft-postheader h1 {
     color: var(--aft-base__h1__color);
+    margin-bottom: 8px;
 }
 
 .aft-postheader a,
@@ -168,6 +169,10 @@ blockquote a:visited,
 .aft-postheadericons a.visited {
     color: var(--aft-a--hover__color);
     font-style: normal;
+}
+
+.node-teaser {
+    border-color: var(--aft-input__background-color);
 }
 
 
@@ -311,7 +316,17 @@ label.aft-radiobutton,
     border-color: var(--aft-input__background-color);
 }
 
+.field-name-field-author-comment .field-label, .editor-title, .editor-title a {
+    color:  var(--aft-recommend__color);
+}
+
 .recommended-comment {
+    background: var(--aft-recommend__background);
+}
+
+/* sticky post */
+
+.node-sticky {
     background: var(--aft-recommend__background);
 }
 
@@ -367,3 +382,13 @@ div.status {
 }
   
 
+/* google search */
+
+.gsc-control-cse {
+    border-color: transparent;
+    background-color: var(--aft-recommend__background);
+}
+
+.gsc-control-cse form tbody {
+    border: none;
+}
